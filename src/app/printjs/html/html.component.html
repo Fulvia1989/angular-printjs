@@ -1,0 +1,33 @@
+<div class="container"  id="print-area" #printArea>
+    <div class="contenitore_qr_dati" *ngIf="candidato" >
+        <div class="value">
+          <p> <strong>Nome: </strong></p>
+          <p> <strong>Cognome: </strong></p>
+          <p> <strong>Data di nascita: </strong></p>
+          <p> <strong>C.F.: </strong></p>
+          <p> <strong>Tempo aggiuntivo: </strong></p>
+          <p> <strong>Presenza: </strong></p>
+          <p> <strong>Tutor: </strong></p>
+          <p> <strong>Pagamento: </strong></p>
+        </div>
+        <div class="description">
+          <p>{{candidato.anagrafica.nome}}</p>
+          <p>{{candidato.anagrafica.cognome}}</p>
+          <p>{{candidato.anagrafica.dataNascita}}</p>
+          <p>{{candidato.anagrafica.cf}}</p>
+          <p>{{candidato.anagrafica.extraTime}}</p>
+          <p>{{candidato.anagrafica.presenza}}</p>
+          <p>{{candidato.anagrafica.tutor}}</p>
+          <p>{{candidato.anagrafica.pagamento}}</p>
+        </div>
+      
+        <div  class="qr-container">
+          <img [src]="'data:'+candidato.qrcode.imgType+';base64,'+candidato.qrcode.img"
+          [alt]="'QRcode'">
+        </div>
+      </div>
+</div>
+<div class="buttons">
+
+    <button (click)="printHTML()">Print HTML</button>
+</div>

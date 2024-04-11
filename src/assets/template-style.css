@@ -1,0 +1,26 @@
+.contenitore_qr_dati{
+    display: grid;
+    grid-template-columns: 10rem 10rem 20rem;
+    grid-template-rows: none;
+    grid-template-areas: "valori descrizione qrcode";
+    justify-content: center;
+  }
+  
+  .value{
+    grid-area: valori;
+  }
+  
+  .description{
+    grid-area: descrizione;
+  }
+  
+  .qr-container{
+    grid-area: qrcode;
+    justify-self: start;
+    margin-left: 15px;
+  }
+  
+  .qr-container img{
+    width: auto;
+  }
+

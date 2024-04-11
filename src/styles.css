@@ -1,0 +1,47 @@
+/* You can add global styles to this file, and also import other style files */
+:root{
+    --dark:#060930;
+    --dark-gray : #333456;
+    --gray: #595B83;
+    --pink : #F4ABC4;
+
+}
+
+body{
+    background-color: var(--dark);
+    color: var(--pink);
+    margin: 0;
+    font-family: Avenir, Helvetica, Arial, sans-serif;
+}
+a{
+    text-decoration: none;
+    color: var(--gray);
+    padding: 0.4rem 1rem;
+    margin: 0 0.5rem;
+    letter-spacing: 1px;
+    border: 1px solid var(--gray);
+    border-radius: 1rem;
+    transition: all 0.3s;
+}
+.active-link{
+    
+    background-color: var(--pink);
+    color: var(--dark)!important;
+    border-radius: 1rem;
+}
+button{
+    background-color: var(--dark-gray);
+    padding: 0.5rem 1rem;
+    color: var(--pink);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border: 1px solid var(--dark-gray);
+    border-radius:1rem;
+    margin: 1rem;
+    transition: all 0.3s;
+
+}
+button:hover{
+    background-color: var(--gray);
+}
+

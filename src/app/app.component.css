@@ -1,0 +1,11 @@
+nav{
+    border-bottom: 1px solid var(--pink);
+    padding: 0 0.3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.buttons{
+    display: flex;
+    align-items: center;
+}

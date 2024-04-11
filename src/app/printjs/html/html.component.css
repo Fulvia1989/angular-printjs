@@ -1,0 +1,11 @@
+@import "../../../assets/template-style.css";
+
+.container{
+    margin-top: 2rem;
+}
+.buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
